@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Interactiva Avanzada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Música de fondo -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Sección de carta -->
+    <div class="carta">
+        <h1>Para Ti, Con Todo Mi Amor</h1>
+        <p>Mi chanchita,</p>
+        <p>Quiero decirte aunque nos separe los kilometros, siempre estare aqui para ti me encantas, eres una mujer increible,llena de cualidades hermosas</p>
+
+        <!-- Botón de sorpresa -->
+        <button onclick="showSurprise()">PULSA AQUI</button>
+
+        <!-- Mensaje de sorpresa (oculto inicialmente) -->
+        <div id="sorpresa" class="hidden">
+            <p>Te amo mucho chanchita no lo olvides siempre estoy aqui para ti, simpre lo estare ten una linda noche te amo.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
