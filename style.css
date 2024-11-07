@@ -1,0 +1,76 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Caja de la carta */
+.carta {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Botón personalizado */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+/* Sección sorpresa */
+#sorpresa {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #ff4081;
+    display: none;
+}
+
+/* Animación de aparición */
+.hidden {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
